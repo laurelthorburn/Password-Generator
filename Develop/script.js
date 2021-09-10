@@ -7,6 +7,13 @@ var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"
 var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var specialCharacters = [" ", "!", "\"", "#", "$", "%", "&", "\'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "\\", "]", "^", "_", "`", "{", "|", "}", "~"];
 var aNumber = [8-128];
+//Creating object
+const randomPassword = {
+  lower: randomLower,
+  upper: randomUpper,
+  number: randomNumber,
+  symbol: randomSpecialCharacters
+};
 
 // Creating function that generates random characters
 function randomLower(){
@@ -38,20 +45,55 @@ var writePassword = function (){
      var hasUpperCase = window.confirm("Do you want upper case letters?");
      var hasNumbers = window.confirm("Do you want numbers?");
          if (hasSpecialCharacters === false && hasLowerCase === false && hasUpperCase === false && hasNumbers === false){
-           alert("DUDE, really???");
+           alert("Hm...let's try that again, remember to pick at least one character next time.");
          }
+         else if (hasSpecialCharacters === true && hasNumbers === true && hasUpperCase === true && hasLowerCase === true){
+           alert("Cool, you want everything");
+         }
+         else if (hasSpecialCharacters === true && hasNumbers === true && hasUpperCase === true){
+          alert("Cool,so no lowercase");
+        }
+        else if (hasSpecialCharacters === true && hasNumbers === true && hasLowerCase === true){
+          alert("Cool, so no uppercase");
+        }
+        else if (hasSpecialCharacters === true && hasUpperCase === true && hasLowerCase === true){
+          alert("Cool, so no numbers");
+        }
+        else if (hasNumbers === true && hasUpperCase === true && hasLowerCase === true){
+          alert("Cool, so no symbols");
+        }
+        else if (hasSpecialCharacters === true && hasNumbers === true){
+          alert("Cool, so no letters");
+        }
+        else if (hasUpperCase === true && hasLowerCase === true){
+          alert("Cool, only letters");
+        }
+        else if (hasSpecialCharacters === true && hasLowerCase === true){
+          alert("Cool, symbols and lowercase");
+        }
+        else if (hasNumbers === true && hasLowerCase === true){
+          alert("Cool, numbers and lowercase");
+        }
+        else if (hasSpecialCharacters === true && hasUpperCase === true ){
+          alert("Cool, symbols and uppercase");
+        }
+        else if (hasNumbers === true && hasUpperCase === true){
+          alert("Cool, numbers and uppercase");
+        }
       }
     };
 
- 
+// how do i use the true boolean to grab it... i don't want to create a crap ton of functions
+
+
+//  function iDk(){
 //   var password = generatePassword(); //WHAT'S THIS? - why local? everything gets written
 //   var passwordText = document.querySelector("#password"); //This refers back to the index ID, where psswd written?
 
 //   passwordText.value = password; //what's this?
 
-// }
+// };
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-// const aNumber = Number(window.prompt("Type a number", ""));
