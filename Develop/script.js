@@ -1,6 +1,8 @@
 // // Assignment Code - grabs button from index sheet using ID
 var generateBtn = document.querySelector("#generate");
 
+var generateCopy = document.querySelector("#copy");
+
 
 //Creating Characters (uppercase)
 var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
@@ -13,6 +15,7 @@ var userPassword = function generatePassword(){
   var allCharacters = [];
   var finalPassword = '';
 
+  //Initial user prompt, error msg if userInput criteria not within set range
   var userInput = window.prompt("Please select a password length between 8-128 characters:"); 
         if (isNaN(userInput) || userInput < 8 || userInput > 128 || userInput == "") {
             alert("You may only enter a number between 8-128. \nPlease rethink your life choices and try again.");
@@ -47,3 +50,8 @@ document.getElementById("password").innerHTML = finalPassword;
 
 // // Add event listener to generate button
 generateBtn.addEventListener("click", userPassword);
+
+// For fun, added a copy button
+generateCopy.addEventListener("click", userPassword);
+
+//Creating copy function
