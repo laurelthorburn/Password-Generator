@@ -20,6 +20,7 @@ var userPassword = function generatePassword(){
         if (isNaN(userInput) || userInput < 8 || userInput > 128 || userInput == "") {
             alert("You may only enter a number between 8-128. \nPlease rethink your life choices and try again.");
         }
+// User prompts for which characters they want in their password
         else {
               if(window.confirm("Do you want special characters? If so, click 'OK'.")){
                 Array.prototype.push.apply(allCharacters, specialCharacters);
@@ -37,14 +38,16 @@ var userPassword = function generatePassword(){
             if (allCharacters.length === 0){
                 alert("Hm...let's try that again, remember to pick at least one character next time.");
               } 
+//Creating formula for random character sequence 
             else {
               for(var i=0; i<userInput; i++){
-                var randoPassword = Math.floor(Math.random()*allCharacters.length);
-                finalPassword += allCharacters[randoPassword];
+                var randomCharacters = Math.floor(Math.random()*allCharacters.length);
+                finalPassword += allCharacters[randomCharacters];
               }
         }
 }
 
+//puts final password in main page
 document.getElementById("password").innerHTML = finalPassword;
 }
 
@@ -52,6 +55,9 @@ document.getElementById("password").innerHTML = finalPassword;
 generateBtn.addEventListener("click", userPassword);
 
 // For fun, added a copy button
-generateCopy.addEventListener("click", userPassword);
+generateCopy.addEventListener("click", finalCopy);
 
 //Creating copy function
+var finalCopy = function(){
+  document.execCommand("Copy");
+};
