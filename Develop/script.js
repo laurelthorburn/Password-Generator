@@ -8,7 +8,7 @@ var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"
 var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var specialCharacters = [" ", "!", "\"", "#", "$", "%", "&", "\'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "\\", "]", "^", "_", "`", "{", "|", "}", "~"];
 
-//Creating global variable for final password
+//Creating global variable for final password and content
 var userPassword = function generatePassword(){
   var allCharacters = [];
   var finalPassword = '';
@@ -30,7 +30,7 @@ var userPassword = function generatePassword(){
               if(window.confirm("Do you want uppercase letters? If so, click 'OK'.")){
                 Array.prototype.push.apply(allCharacters, upperCase);
               }
-// if user picks all false, kick out error/try again msg
+// if user picks all false/'cancel', kick out error/try again msg
             if (allCharacters.length === 0){
                 alert("Hm...let's try that again, remember to pick at least one character next time.");
               } 
