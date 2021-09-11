@@ -37,9 +37,9 @@ THEN the password is either displayed in an alert or written to the page
 ![Screenshot of Laurel Thorburn's Portfolio](Assets/images/LTScreenshot.png)
 
 # Links
-Github: https://github.com/laurelthorburn/LaurelThorburnPortfolio
+Github: https://github.com/laurelthorburn/Password-Generator
 
-Deployed Site: https://laurelthorburn.github.io/LaurelThorburnPortfolio/
+Deployed Site: https://laurelthorburn.github.io/Password-Generator/
 
 
 ## Credit
