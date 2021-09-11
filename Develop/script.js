@@ -54,12 +54,14 @@ document.getElementById("password").innerHTML = finalPassword;
 // // Add event listener to generate button
 generateBtn.addEventListener("click", userPassword);
 
+//Creating copy function
+var finalCopy = function(){
+  var copyText = document.getElementById("password");
+  copyText.select();
+  navigator.clipboard.writeText(copyText.value);
+  alert("Copied the text: " + copyText.value);
+};
+
 // For fun, added a copy button
 generateCopy.addEventListener("click", finalCopy);
 
-//Creating copy function
-var finalCopy = function(){
-   document.getElementById("password").select();
-    document.execCommand("Copy");
-    alert("Password copied to clipboard!");
-};
