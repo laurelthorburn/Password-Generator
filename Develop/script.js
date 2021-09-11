@@ -1,8 +1,7 @@
-// // Assignment Code - grabs button from index sheet using ID
+// // Assignment Code - grabs buttons from index sheet using ID
 var generateBtn = document.querySelector("#generate");
 
 var generateCopy = document.querySelector("#copy");
-
 
 //Creating Characters (uppercase)
 var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
@@ -20,7 +19,7 @@ var userPassword = function generatePassword(){
         if (isNaN(userInput) || userInput < 8 || userInput > 128 || userInput == "") {
             alert("You may only enter a number between 8 and 128. \nPlease rethink your life choices and try again.");
         }
-// User prompts for which characters they want in their password
+// User prompts for which characters user wants in their password
         else {
               if(window.confirm("Do you want special characters? If so, click 'OK'.")){
                 Array.prototype.push.apply(allCharacters, specialCharacters);
