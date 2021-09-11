@@ -15,7 +15,7 @@ var userPassword = function generatePassword(){
   var finalPassword = '';
 
   //Initial user prompt, error msg if userInput criteria not within set range
-  var userInput = window.prompt("Please select a password length between 8 and 128 characters:"); 
+  var userInput = window.prompt("Please select a password length between 8 and 128 characters:", "enter a numerical value between 8 and 128"); 
         if (isNaN(userInput) || userInput < 8 || userInput > 128 || userInput == "") {
             alert("You may only enter a number between 8 and 128. \nPlease rethink your life choices and try again.");
         }
