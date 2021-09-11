@@ -60,6 +60,7 @@ var finalCopy = function(){
   copyText.select();
   navigator.clipboard.writeText(copyText.value);
   alert("Copied the text: " + copyText.value);
+  console.log("Thanks for checking out my password generator!");
 };
 
 // For fun, added a copy button
