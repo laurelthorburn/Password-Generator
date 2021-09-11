@@ -1,7 +1,7 @@
 # Password-Generator
 
 ## Description
-The purpose of this project was to create a password generator that allowed the user to insert their desired criteria for a random password. Throughout this undertaking, I was able to continue to grow my javascript skills, especially in terms of functions, if/else phrases, troubleshooting console log errors, and utilizing arrays.  This project also helped expand my knowledge and comfort of reading code and understanding the code's output.
+The purpose of this project was to create a password generator that allowed the user to select their desired criteria for a random password, including length and characters (i.e., symbols, letters, and numbers). Throughout this undertaking, I was able to continue to grow my javascript skills, especially in terms of functions, if/else phrases, troubleshooting console log errors, and utilizing arrays.  This project also helped expand my knowledge and comfort of reading code and understanding the code's output.
 
 ## User Story
 
@@ -34,7 +34,7 @@ THEN the password is either displayed in an alert or written to the page
 
 # Website Screenshot
 
-![Screenshot of Laurel Thorburn's Portfolio](Assets/images/LTScreenshot.png)
+![Screenshot of Laurel Thorburn's Portfolio](Assets/Media/PasswordGeneratorVideo.gif)
 
 # Links
 Github: https://github.com/laurelthorburn/Password-Generator
