@@ -16,9 +16,9 @@ var userPassword = function generatePassword(){
   var finalPassword = '';
 
   //Initial user prompt, error msg if userInput criteria not within set range
-  var userInput = window.prompt("Please select a password length between 8-128 characters:"); 
+  var userInput = window.prompt("Please select a password length between 8 and 128 characters:"); 
         if (isNaN(userInput) || userInput < 8 || userInput > 128 || userInput == "") {
-            alert("You may only enter a number between 8-128. \nPlease rethink your life choices and try again.");
+            alert("You may only enter a number between 8 and 128. \nPlease rethink your life choices and try again.");
         }
 // User prompts for which characters they want in their password
         else {
@@ -36,7 +36,7 @@ var userPassword = function generatePassword(){
               }
 // if user picks all false/'cancel', kick out error/try again msg
             if (allCharacters.length === 0){
-                alert("Hm...let's try that again, remember to pick at least one character next time.");
+                alert("Hm...let's try that again, remember to pick at least one character type next time.");
               } 
 //Creating formula for random character sequence 
             else {
@@ -59,5 +59,7 @@ generateCopy.addEventListener("click", finalCopy);
 
 //Creating copy function
 var finalCopy = function(){
-  document.execCommand("Copy");
+   document.getElementById("password").select();
+    document.execCommand("Copy");
+    alert("Password copied to clipboard!");
 };
