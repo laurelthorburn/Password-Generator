@@ -5,6 +5,11 @@ The purpose of this project was to create a password generator that allowed the 
 
 Throughout this undertaking, I was able to continue to grow my JavsScript skills, especially in terms of functions, if/else phrases, troubleshooting console log errors, and utilizing arrays.  This project also helped expand my knowledge and comfort of reading code and understanding the code's output.
 
+# Links
+Github: https://github.com/laurelthorburn/Password-Generator
+
+Deployed Site: https://laurelthorburn.github.io/Password-Generator/
+
 ## User Story
 
 ```
@@ -40,11 +45,6 @@ THEN the password is either displayed in an alert or written to the page
 # Website Screenshot
 
 ![Screenshot of Laurel Thorburn's Portfolio](Assets/Media/PasswordGeneratorVideo.gif)
-
-# Links
-Github: https://github.com/laurelthorburn/Password-Generator
-
-Deployed Site: https://laurelthorburn.github.io/Password-Generator/
 
 # License
 * MIT
