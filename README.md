@@ -42,9 +42,14 @@ THEN the password is either displayed in an alert or written to the page
 * CSS
 * JavaScript
 
-# Website Screenshot
+# Website Video
 
 ![Screenshot of Laurel Thorburn's Portfolio](Assets/Media/PasswordGeneratorVideo.gif)
+
+# Website Screenshots
+
+![Screenshot of Laurel Thorburn's Portfolio](Assets/Media/Screenshot1.png)
+![Screenshot of Laurel Thorburn's Portfolio](Assets/Media/Screenshot2.png)
 
 # License
 * MIT
